@@ -60,12 +60,12 @@ class Alarm():
                     foreground="blue", bd=2, font=("Arial", 12))
         self.sec_time.grid(row=5, column=0, sticky="")
 
-        submit=Button(text="Set the alarm", bg="yellow", fg="blue",
+        self.submit=Button(text="Set the alarm", bg="yellow", fg="blue",
         activebackground="cyan", activeforeground="black",
         width=25, height=10,
         command= command_function)
 
-        submit.grid(row=3, column=1, rowspan=3, sticky="e")
+        self.submit.grid(row=3, column=1, rowspan=3, sticky="e")
 
     def time_clock(self):
         time_now= time.strftime("%H:%M:%S")
