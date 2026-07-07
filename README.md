@@ -28,8 +28,6 @@ This project was created to practice **Object-Oriented Programming (OOP)**, sepa
   <img src="images/alarm_clock.png" alt="Alarm Clock Screenshot" width="500">
 </p>
 
-> Save a screenshot of the application as **`alarm_clock.png`** inside the **`images`** folder.
-
 ---
 
 ## Project Structure
