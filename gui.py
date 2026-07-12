@@ -11,6 +11,7 @@ class Alarm():
 
         self.alarm= Tk()
         self.alarm.title("Alarm clock")
+        self.alarm.config(bg="yellow")
         self.alarm.resizable(False, False)
         self.alarm.geometry("450x300")
 
@@ -33,15 +34,15 @@ class Alarm():
         self.user_time.grid(row=2)
 
         self.hr= Label(self.alarm, font=(self.my_font, 16, "bold"),
-                    text= "hour:", foreground="black")
+                    text= "hour:", bg="black", foreground="white")
         self.hr.grid(row=3, column=0, sticky="w")
 
         self.mi= Label(self.alarm, font=(self.my_font, 16, "bold"),
-                    text= "min:", foreground="black")
+                    text= "min:", bg="black", foreground="white")
         self.mi.grid(row=4, column=0, sticky="w")
 
         self.se= Label(self.alarm, font=(self.my_font, 16, "bold"),
-                    text= "sec:", foreground="black")
+                    text= "sec:", bg="black", foreground="white")
         self.se.grid(row=5, column=0, sticky="w")
 
         self.hour= StringVar(value="00")
@@ -49,18 +50,18 @@ class Alarm():
         self.sec= StringVar(value="00")
 
         self.hour_time= Entry(textvariable=self.hour, width=10, bg="white",
-                    foreground="blue", bd=2, font=("Arial", 12))
+                    foreground="black", bd=2, font=("Arial", 12))
         self.hour_time.grid(row=3, column=0, sticky="")
 
         self.min_time= Entry(textvariable=self.mins, width=10, bg="white",
-                    foreground="blue", bd=2, font=("Arial", 12))
+                    foreground="black", bd=2, font=("Arial", 12))
         self.min_time.grid(row=4, column=0, sticky="")
 
         self.sec_time= Entry(textvariable=self.sec, width=10, bg="white",
-                    foreground="blue", bd=2, font=("Arial", 12))
+                    foreground="black", bd=2, font=("Arial", 12))
         self.sec_time.grid(row=5, column=0, sticky="")
 
-        self.submit=Button(text="Set the alarm", bg="yellow", fg="blue",
+        self.submit=Button(text="Set the alarm", bg="yellow", fg="black",
         activebackground="cyan", activeforeground="black",
         width=25, height=10,
         command= command_function)
